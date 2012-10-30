@@ -1,0 +1,31 @@
+C:\Users\Marcos\.morena\twain64_604000c.dll found ...
+SK.gnome.twain.TwainManager$CloseHook registered ...
+Loading license for SK.gnome.twain.TwainManager class loader ...
+License loaded ...
+
+Morena - Image Acquisition Framework version 6.4.0.12.
+Copyright (c) Gnome s.r.o. 1999-2011. All rights reserved.
+Licensed to "Marcos Farabollini <marcos.farabollini@gmail.com>".
+
+The license will expire on 26/4/2013!
+
+This license is valid for personal use only.
+
+   -> TwainManagerImpl::TwainManagerImpl("Gnome s.r.o.", "Twain", "Morena", 6, 4)
+      state: PRESESSION -> DSM_LOADED
+      [CONTROL, PARENT, OPENDSM] -> [SUCCESS, SUCCESS]
+      state: DSM_LOADED -> DSM_OPEN
+      [CONTROL, IDENTITY, GETFIRST] -> [SUCCESS, SUCCESS]
+      -> TwainSourceImpl::TwainSourceImpl()
+         state: -> DSM_OPEN
+         fileAvailable: -> FALSE
+      <-
+      [CONTROL, IDENTITY, GETNEXT] -> [ENDOFLIST, SUCCESS]
+   <-
+   -> TwainManagerImpl::listSources()
+   <- "TWAIN2 FreeImage Software Scanner"[1]
+Testing capabilities for 'null' ...
+
+Exception in thread "main" java.lang.NullPointerException
+	at TwainAutomatedTest.<init>(TwainAutomatedTest.java:51)
+	at TwainAutomatedTest.main(TwainAutomatedTest.java:3363)
